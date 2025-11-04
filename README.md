@@ -1,11 +1,29 @@
-# threejs-gltf-import
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Millennium Falcon</title>
 
-Demo app for importing a .gltf model using Three.js
+		<link rel="stylesheet" href="public/index.css">
 
-## Demo
-
-https://dgreenheck.github.io/threejs-gltf-import/
-
-## Tutorial
-
-Check out the [step-by-step tutorial](https://youtu.be/aOQuuotM-Ww) on my YouTube channel!
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+	</head>
+	<body>
+    <div id="heading">
+      <h1>THE MILLENNIUM FALCON</h1>
+      <div class="border"></div>
+    </div>
+    <div id="progress-container">
+      <div id="progress">Engaging Hyperdrive...</div>
+    </div>
+		<script type="module" src="./main.js"></script>
+	</body>
+</html>
